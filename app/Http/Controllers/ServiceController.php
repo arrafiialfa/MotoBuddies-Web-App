@@ -23,6 +23,15 @@ class ServiceController extends Controller
         ]);
     }
 
+
+    public function details(Service $service)
+    {
+
+        return view('services.details', [
+            'service' => $service
+        ]);
+    }
+
     //add service data to db if authenticated user is dealer/admin
 
 

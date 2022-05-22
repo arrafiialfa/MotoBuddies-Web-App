@@ -16,6 +16,14 @@ class ProductController extends Controller
     }
 
 
+    public function details(Product $product)
+    {
+
+        return view('products.details', [
+            'product' => $product
+        ]);
+    }
+
     public function store()
     {
 

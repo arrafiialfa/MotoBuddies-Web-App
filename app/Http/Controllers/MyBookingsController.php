@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Models\Booking;
 use Illuminate\Http\Request;
 
 class MyBookingsController extends Controller
@@ -23,5 +23,16 @@ class MyBookingsController extends Controller
                 'bookings' => $bookings,
             ]
         );
+    }
+
+
+
+    public function details(Booking $booking)
+    {
+
+        return view('mybookings.details', [
+            'booking' => $booking,
+            'bookedServices' => $booking->booked_services
+        ]);
     }
 }

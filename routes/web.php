@@ -7,11 +7,8 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\ProductDetailsController;
 use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\ServiceDetailsController;
 use App\Http\Controllers\MyBookingsController;
-use App\Http\Controllers\BookingDetailsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AddVehicleController;
 use App\Http\Controllers\TipsTricksController;
@@ -50,15 +47,15 @@ Route::get('/book/success', function () {
 })->name('book.success');
 
 Route::get('/mybookings', [MyBookingsController::class, 'index'])->name('myBookings');
-Route::get('/mybookings/{booking}/details', [BookingDetailsController::class, 'index'])->name('myBookings.details');
+Route::get('/mybookings/{booking}/details', [MyBookingsController::class, 'details'])->name('myBookings.details');
 
 Route::get('/order-history', [OrderHistoryController::class, 'index'])->name('orderHistory')->middleware('auth');
 
 Route::get('/service', [ServiceController::class, 'index'])->name('services');
-Route::get('/service/{service}/details', [ServiceDetailsController::class, 'index'])->name('services.details');
+Route::get('/service/{service}/details', [ServiceController::class, 'details'])->name('services.details');
 
 Route::get('/products', [ProductController::class, 'index'])->name('products');
-Route::get('/products/{product}/details', [ProductDetailsController::class, 'index'])->name('products.details');
+Route::get('/products/{product}/details', [ProductController::class, 'details'])->name('products.details');
 
 
 //testroute --- add service data

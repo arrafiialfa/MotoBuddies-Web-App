@@ -9,7 +9,7 @@
                 <img src="/images/BOOKINGGRAPHIC.png" class="h-32 mx-auto MB-3" alt="VOUCHER">
                 <div class="my-8">
                     <div class="flex flex-col">
-                        <h1 class="text-gray-800 text-xl font-medium mb-2">Service {{ $product->nama }}</h1>
+                        <h1 class="text-gray-800 text-xl font-medium mb-2">{{ $product->nama }}</h1>
                         <p class="text-gray-600  text-justify ">{{ $product->deskripsi }}</p>
 
                     </div>
