@@ -7,39 +7,45 @@
         <img src="/images/VOUCHER1.png" class="h-32 mx-auto MB-3" alt="VOUCHER">
 
 
-        <div class="grid grid-cols-3 gap-4 text-center my-12 ">
-            <div>
+        <div class="grid grid-cols-3 gap-4 text-center my-12 text-sm ">
+            <a href="#"
+                class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
-                <img src="/images/FIND.png" class="h-24 mx-auto" alt="find dealer">
+                <img src="/images/FIND.png" class="h-16 mx-auto" alt="find dealer">
 
                 <span>Find Dealer</span>
-            </div>
+            </a>
 
-            <div>
+            <a href="<?php echo e(route('book')); ?>"
+                class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
-                <img src="/images/BOOK.png" class="h-24 mx-auto" alt="BOOK">
+                <img src="/images/BOOK.png" class="h-16 mx-auto" alt="BOOK">
                 <span>Book Servis</span>
-            </div>
-            <div>
+            </a>
+            <a href="<?php echo e(route('products')); ?>"
+                class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
-                <img src="/images/SPAREPARTS.png" class="h-24 mx-auto" alt="SPAREPARTS">
+                <img src="/images/SPAREPARTS.png" class="h-16 mx-auto" alt="SPAREPARTS">
                 <span>Spare Parts</span>
-            </div>
-            <div>
+            </a>
+            <a href="/tips-tricks"
+                class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
-                <img src="/images/TIPS.png" class="h-24 mx-auto" alt="TIPSTRICKS">
+                <img src="/images/TIPS.png" class="h-16 mx-auto" alt="TIPSTRICKS">
                 <span>Tips and Tricks</span>
-            </div>
-            <div>
+            </a>
+            <a href="<?php echo e(route('services')); ?>"
+                class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
-                <img src="/images/SERVICES.png" class="h-24 mx-auto" alt="SERVICES">
+                <img src="/images/SERVICES.png" class="h-16 mx-auto" alt="SERVICES">
                 <span>Pilihan Servis</span>
-            </div>
-            <div>
+            </a>
+            <a href="<?php echo e(route('myBookings')); ?>"
+                class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1">
 
-                <img src="/images/SCHEDULE.png" class="h-24 mx-auto" alt="SCHEDULE">
-                <span>Jadwal Servis</span>
-            </div>
+                <img src="/images/SCHEDULE.png" class="h-16 mx-auto" alt="SCHEDULE">
+                <span>My Bookings</span>
+            </a>
 
 
 
